@@ -1,6 +1,22 @@
 {
   "name": "pocket-dev",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "license": "MIT",
+  "description": "CLI tool collection for developers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pocketdevjs/pocketdev"
+  },
+  "keywords": [
+    "CLI",
+    "base64",
+    "color",
+    "jwt",
+    "time",
+    "url-encode",
+    "hash",
+    "json"
+  ],
   "dependencies": {
     "commander": "^6.1.0",
     "jwt-decode": "^3.0.0",
