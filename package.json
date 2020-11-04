@@ -1,0 +1,21 @@
+{
+  "name": "pocket-dev",
+  "version": "1.0.0",
+  "dependencies": {
+    "commander": "^6.1.0",
+    "jwt-decode": "^3.0.0",
+    "prettyjson": "^1.2.1"
+  },
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.0",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.0"
+  },
+  "bin": {
+    "pocket-dev": "main.js",
+    "pd": "main.js"
+  }
+}
