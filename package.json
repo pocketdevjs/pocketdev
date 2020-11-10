@@ -20,7 +20,8 @@
   "dependencies": {
     "commander": "^6.1.0",
     "jwt-decode": "^3.0.0",
-    "prettyjson": "^1.2.1"
+    "prettyjson": "^1.2.1",
+    "uuid": "^8.3.1"
   },
   "scripts": {
     "test": "mocha test.js"

@@ -50,6 +50,10 @@ describe('main.js', function () {
     const exp = (a) => {
         assert.strictEqual(hook.captured(), a)
     };
+
+    const len = (a) => {
+        assert.strictEqual(hook.captured().length, a)
+    };
     
     it('should decode jwt"', function () {
         cmd('jwt decode eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjMiLCJuYW1lIjoiSm9obiIsImlhdCI6MTUxNjIzOTAyMn0.kteH-22XrxFPtkPoxk_TP5EsGiBJB2OLn3fAztHich0');
@@ -183,5 +187,11 @@ describe('main.js', function () {
         cmd('crypto hash sha257 test1223');
         run();
         exp('Digest method not supported\n')
+    });
+
+    it('should generate uuid"', function () {
+        cmd('uuid');
+        run();
+        len(37)
     });
 });

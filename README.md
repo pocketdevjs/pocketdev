@@ -52,3 +52,6 @@ Pocket-dev opens as an interative cli where you can continuiously paste your inp
 `pd url encode %foo§`
 
 `pd url decode %25foo%C2%A7`
+
+#### UUID
+`pd uuid`

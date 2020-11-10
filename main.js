@@ -10,6 +10,7 @@ const RegexCommand = require('./modules/regex');
 const Base64Command = require('./modules/base64');
 const ColorCommand = require('./modules/color');
 const JsonCommand = require('./modules/json');
+const UidCommand = require('./modules/uuid');
 
 program.version('0.0.1');
 
@@ -22,6 +23,7 @@ program.addCommand(new CryptoCommand().create());
 program.addCommand(new UrlCommand().create());
 program.addCommand(new JsonCommand().create());
 program.addCommand(new ColorCommand().create());
+program.addCommand(new UidCommand().create());
 
 
 program.parse(process.argv);
